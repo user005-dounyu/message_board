@@ -1,5 +1,7 @@
 package models;
 
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +11,6 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-import com.google.protobuf.Timestamp;
 
 @Entity
 @NamedQueries({
@@ -65,8 +66,8 @@ public class Message {
         return created_at;
     }
 
-    public void setCreated_at(Timestamp created_at) {
-        this.created_at = created_at;
+    public void setCreated_at(Timestamp currentTime) {
+        this.created_at = currentTime;
     }
 
     public Timestamp getUpdated_at() {

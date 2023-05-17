@@ -1,4 +1,4 @@
-package cotrollers;
+package controllers;
 
 import java.io.IOException;
 import java.sql.Timestamp;
